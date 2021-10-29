@@ -1,0 +1,133 @@
+footer {
+  background: #1f2131;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 8rem;
+  padding-bottom: 3rem;
+
+  .leftside {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+
+    span {
+      &:first-child {
+        margin-bottom: 2rem;
+        line-height: 1.5;
+      }
+    }
+
+    .logos {
+      display: flex;
+      flex-direction: row;
+      .borderr {
+        margin-right: 1rem;
+        border: 1px solid #393c4d;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .copy {
+      margin-top: 10rem;
+    }
+  }
+
+  .rightside {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    .list {
+      margin-top: -3rem;
+      margin-right: 4rem;
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      span.head {
+        font-size: 1.8rem;
+      }
+      span {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and(max-width: 1200px) {
+  footer {
+    background: #1f2131;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 8rem;
+    align-items: center;
+    padding-bottom: 3rem;
+
+    .leftside {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+
+      span {
+        &:first-child {
+          margin-bottom: 2rem;
+          line-height: 1.5;
+        }
+      }
+
+      .logos {
+        display: flex;
+        flex-direction: row;
+        .borderr {
+          margin-right: 1rem;
+          border: 1px solid #393c4d;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      .copy {
+        margin-top: 2rem;
+      }
+    }
+
+    .rightside {
+      width: 70%;
+      margin-top: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      .list {
+        margin-top: 3rem;
+        // margin-right: 4rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        span.head {
+          font-size: 1.8rem;
+        }
+        span {
+          font-size: 1.3rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

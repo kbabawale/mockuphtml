@@ -1,0 +1,116 @@
+section.advert {
+  width: 100%;
+
+  .ad {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .box {
+      max-width: 350px;
+      width: 30%;
+      height: 300px;
+      background: #fbfbfb;
+      border: 1px solid #d6d6d6;
+      box-sizing: border-box;
+      border-radius: 0.4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #c2c2c2;
+      font-size: 2rem;
+    }
+  }
+
+  .banner {
+    background: #ffebff;
+    width: 60%;
+    margin: 10rem auto 10rem auto;
+
+    .innerbanner {
+      background: url("../../assets/images/pattern.png") no-repeat right center;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+
+      height: 15rem;
+
+      span {
+        font-size: 2.5rem;
+        margin-right: 15rem;
+      }
+
+      button {
+        border: none;
+        outline: none;
+        background: #ff6634;
+        color: #fff;
+        cursor: pointer;
+        padding: 2rem;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and(max-width: 1200px) {
+  section.advert {
+    width: 100%;
+
+    .ad {
+      margin-top: 10rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .box {
+        width: 70%;
+        margin-bottom: 3rem;
+        height: 300px;
+        background: #fbfbfb;
+        border: 1px solid #d6d6d6;
+        box-sizing: border-box;
+        border-radius: 0.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #c2c2c2;
+        font-size: 2rem;
+      }
+    }
+
+    .banner {
+      background: #ffebff;
+      width: 60%;
+      margin: 10rem auto 10rem auto;
+
+      .innerbanner {
+        background: url("../../assets/images/pattern.png") no-repeat right
+          center;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10rem 4rem;
+
+        span {
+          font-size: 2rem;
+          margin-right: 0;
+        }
+
+        button {
+          border: none;
+          outline: none;
+          background: #ff6634;
+          color: #fff;
+          cursor: pointer;
+          padding: 2rem;
+          border-radius: 0.5rem;
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}

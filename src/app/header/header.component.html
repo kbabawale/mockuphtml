@@ -1,0 +1,18 @@
+<header class="desktop">
+    <ul>
+        <li><a routerLink="/">Timeline</a></li>
+        <li><a routerLink="/">Peer Review</a></li>
+        <li><a routerLink="/">Login</a></li>
+    </ul>
+    <button type="button">SignUp</button>
+</header>
+
+<span class="showMobile f-15" (click)="showMobile = !showMobile" *ngIf="innerWidth < 600">Toggle Menu</span>
+<header class="mobile" *ngIf="showMobile">
+    <ul>
+        <li><a routerLink="/">Timeline</a></li>
+        <li><a routerLink="/">Peer Review</a></li>
+        <li><a routerLink="/">Login</a></li>
+        <li><a routerLink="/">SignUp</a></li>
+    </ul>
+</header>
